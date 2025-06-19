@@ -1,9 +1,12 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Brain, Users, Settings, ArrowRight, Mail, Instagram, Linkedin } from "lucide-react"
+
+import team from "/public/pic.webp"
 
 export default function HomePage() {
   return (
@@ -68,13 +71,13 @@ export default function HomePage() {
               </h2>
               <p className="text-lg text-[#777777] leading-relaxed">
                 Eezdra is a media‑tech operating system built for creators. We combine AI‑powered content creation,
-                scalable creator networks, and automated systems to help you grow—quietly but powerfully. Our mission:
+                scalable creator networks, and automated systems to help you grow quietly but powerfully. Our mission:
                 to build the backbone of tomorrow's digital empires.
               </p>
             </div>
             <div className="relative">
               <div className="w-full h-80 bg-gradient-to-br from-[#3C1361]/10 to-[#008080]/10 rounded-2xl flex items-center justify-center">
-                <Settings className="h-24 w-24 text-[#3C1361] opacity-50" />
+                <Image src={team} alt="" width={400} height={400} className="w-full h-full object-cover rounded-2xl" />
               </div>
             </div>
           </div>
