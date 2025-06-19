@@ -53,6 +53,63 @@ export default function WorkWithUsPage() {
         </div>
       </section>
 
+      {/* Application Section */}
+      <section className="py-20 bg-gradient-to-r from-[#3C1361] to-[#008080]">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h3
+            className="text-3xl md:text-4xl font-bold text-white mb-6"
+            style={{ fontFamily: "Playfair Display, serif" }}
+          >
+            Ready to Join the System?
+          </h3>
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            We're selective about who we work with. If you're serious about scaling your creative work systematically,
+            we want to hear from you.
+          </p>
+
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-md mx-auto">
+            <h4 className="text-xl font-semibold text-white mb-4">Application Process</h4>
+            <div className="space-y-3 text-left">
+              <div className="flex items-center text-white/90">
+                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 text-sm font-semibold">
+                  1
+                </div>
+                <span className="text-sm">Submit your application</span>
+              </div>
+              <div className="flex items-center text-white/90">
+                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 text-sm font-semibold">
+                  2
+                </div>
+                <span className="text-sm">Portfolio review</span>
+              </div>
+              <div className="flex items-center text-white/90">
+                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 text-sm font-semibold">
+                  3
+                </div>
+                <span className="text-sm">Strategy call</span>
+              </div>
+              <div className="flex items-center text-white/90">
+                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 text-sm font-semibold">
+                  4
+                </div>
+                <span className="text-sm">Welcome to Eezdra</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <Button
+              size="lg"
+              className="bg-white text-[#3C1361] hover:bg-gray-100 px-8 py-4 text-lg font-semibold tracking-wider uppercase rounded-full"
+              onClick={() => window.open("https://forms.google.com/your-form-link", "_blank")}
+            >
+              Start Application
+            </Button>
+            <p className="text-white/70 text-sm mt-4">Applications reviewed within 48 hours</p>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -85,8 +142,8 @@ export default function WorkWithUsPage() {
                 <div className="w-12 h-12 bg-[#FFD700]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <div className="w-3 h-3 bg-[#FFD700] rounded-full"></div>
                 </div>
-                <h3 className="font-semibold text-[#1A1A1A] mb-2">Team growth & revenue share</h3>
-                <p className="text-[#777777] text-sm">Collaborative growth with transparent compensation structures</p>
+                <h3 className="font-semibold text-[#1A1A1A] mb-2">Team growth</h3>
+                <p className="text-[#777777] text-sm">Collaborative growth with transparent structures</p>
               </div>
             </div>
           </div>
@@ -179,62 +236,7 @@ export default function WorkWithUsPage() {
         </div>
       </section>
 
-      {/* Application Section */}
-      <section className="py-20 bg-gradient-to-r from-[#3C1361] to-[#008080]">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h3
-            className="text-3xl md:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: "Playfair Display, serif" }}
-          >
-            Ready to Join the System?
-          </h3>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            We're selective about who we work with. If you're serious about scaling your creative work systematically,
-            we want to hear from you.
-          </p>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-md mx-auto">
-            <h4 className="text-xl font-semibold text-white mb-4">Application Process</h4>
-            <div className="space-y-3 text-left">
-              <div className="flex items-center text-white/90">
-                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 text-sm font-semibold">
-                  1
-                </div>
-                <span className="text-sm">Submit your application</span>
-              </div>
-              <div className="flex items-center text-white/90">
-                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 text-sm font-semibold">
-                  2
-                </div>
-                <span className="text-sm">Portfolio review</span>
-              </div>
-              <div className="flex items-center text-white/90">
-                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 text-sm font-semibold">
-                  3
-                </div>
-                <span className="text-sm">Strategy call</span>
-              </div>
-              <div className="flex items-center text-white/90">
-                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 text-sm font-semibold">
-                  4
-                </div>
-                <span className="text-sm">Welcome to Eezdra</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-8">
-            <Button
-              size="lg"
-              className="bg-white text-[#3C1361] hover:bg-gray-100 px-8 py-4 text-lg font-semibold tracking-wider uppercase rounded-full"
-              onClick={() => window.open("https://forms.google.com/your-form-link", "_blank")}
-            >
-              Start Application
-            </Button>
-            <p className="text-white/70 text-sm mt-4">Applications reviewed within 48 hours</p>
-          </div>
-        </div>
-      </section>
 
       {/* Back to Home */}
       <div className="bg-[#FDFDFD] py-8">

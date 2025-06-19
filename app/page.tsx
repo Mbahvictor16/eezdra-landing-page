@@ -8,6 +8,12 @@ import { Brain, Users, Settings, ArrowRight, Mail, Instagram, Linkedin } from "l
 
 import team from "/public/pic.webp"
 import logo from "/public/logo.png"
+import solutions from "/public/analytics.png"
+import teams from "/public/teams.jpg"
+import creation from "/public/creation.jpg"
+import research from "/public/research.png"
+
+
 
 export default function HomePage() {
   return (
@@ -84,51 +90,51 @@ export default function HomePage() {
       </section>
 
       {/* What We Offer */}
-      <section className="py-20 bg-[#FDFDFD]">
+      <section className="py-20 bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
-            <Card className="group hover:scale-105 transition-all duration-300 hover:shadow-xl border-0 bg-white">
+            <Card className="group hover:scale-105 transition-all duration-300 hover:shadow-xl border-0 bg-black text-white">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-[#3C1361]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#3C1361]/20 transition-colors">
-                  <Settings className="h-8 w-8 text-[#FFD700]" />
+                <div className="w-48 h-32 bg-[#3C1361]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#3C1361]/20 transition-colors">
+                  <Image src={solutions} alt="solutions" width={200} height={150} className="w-full h-full object-cover rounded-sm" />
                 </div>
-                <h3 className="text-xl font-bold text-[#1A1A1A] mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
+                <h3 className="text-xl font-bold text-white mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
                   Content Management Solutions
                 </h3>
                 <p className="text-[#777777]">Consistency is built, not guessed</p>
               </CardContent>
             </Card>
 
-            <Card className="group hover:scale-105 transition-all duration-300 hover:shadow-xl border-0 bg-white">
+            <Card className="group hover:scale-105 transition-all duration-300 hover:shadow-xl border-0 bg-black text-white">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-[#3C1361]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#3C1361]/20 transition-colors">
-                  <Brain className="h-8 w-8 text-[#3C1361]" />
+                <div className="w-48 h-32 bg-[#3C1361]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#3C1361]/20 transition-colors">
+                  <Image src={creation} alt="solutions" width={200} height={150} className="w-full h-full object-cover rounded-sm" />
                 </div>
-                <h3 className="text-xl font-bold text-[#1A1A1A] mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
+                <h3 className="text-xl font-bold text-white mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
                   Creative Systems
                 </h3>
                 <p className="text-[#777777]">From concept to execution, we build content engines that work on autopilot</p>
               </CardContent>
             </Card>
 
-            <Card className="group hover:scale-105 transition-all duration-300 hover:shadow-xl border-0 bg-white">
+            <Card className="group hover:scale-105 transition-all duration-300 hover:shadow-xl border-0 bg-black text-white">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-[#008080]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#008080]/20 transition-colors">
-                  <Users className="h-8 w-8 text-[#008080]" />
+                <div className="w-48 h-32 bg-[#3C1361]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#3C1361]/20 transition-colors">
+                  <Image src={teams} alt="solutions" width={200} height={150} className="w-full h-full object-cover rounded-sm" />
                 </div>
-                <h3 className="text-xl font-bold text-[#1A1A1A] mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
+                <h3 className="text-xl font-bold text-white mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
                   Team Assembly
                 </h3>
                 <p className="text-[#777777]">We source and manage creators that keep your brand moving.</p>
               </CardContent>
             </Card>
 
-            <Card className="group hover:scale-105 transition-all duration-300 hover:shadow-xl border-0 bg-white">
+            <Card className="group hover:scale-105 transition-all duration-300 hover:shadow-xl border-0 bg-black">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-[#FFD700]/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#FFD700]/30 transition-colors">
-                  <Brain className="h-8 w-8 text-[#3C1361]" />
+                <div className="w-48 h-32 bg-[#3C1361]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#3C1361]/20 transition-colors">
+                  <Image src={research} alt="solutions" width={200} height={150} className="w-full h-full object-cover rounded-sm" />
                 </div>
-                <h3 className="text-xl font-bold text-[#1A1A1A] mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
+                <h3 className="text-xl font-bold text-white mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
                   Deep Content & Insights
                 </h3>
                 <p className="text-[#777777]">We study what performs so every next move is smarter</p>
@@ -139,7 +145,7 @@ export default function HomePage() {
       </section>
 
       {/*  */}
-      <section id="trusted brands" className="py-20 bg-white">
+      <section id="trusted-brands" className="py-20 bg-black text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-rows-2 gap-12 items-center">
             <div>
