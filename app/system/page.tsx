@@ -1,6 +1,9 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, ArrowLeft } from "lucide-react"
+
+import logo from "/public/logo.png"
 
 export default function SystemPage() {
   return (
@@ -14,7 +17,8 @@ export default function SystemPage() {
               className="text-2xl font-bold text-[#3C1361]"
               style={{ fontFamily: "Playfair Display, serif" }}
             >
-              Eezdra
+              <Image src={logo} alt="logo" width={150} height={100} />
+
             </Link>
             <div className="hidden md:flex space-x-8">
               <Link href="/#about" className="text-[#1A1A1A] hover:text-[#3C1361] transition-colors">
@@ -32,15 +36,15 @@ export default function SystemPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-[#3C1361]/5 to-[#008080]/5">
+      <section className="py-20 bg-black">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h1
-            className="text-4xl md:text-6xl font-bold text-[#1A1A1A] mb-6"
+            className="text-4xl md:text-6xl font-bold text-white mb-6"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            How the Eezdra <span className="text-[#3C1361]">System</span> Works
+            How the Eezdra <span className="text-[#7B04CE]">System</span> Works
           </h1>
-          <p className="text-xl text-[#777777] max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             A comprehensive overview of our media-tech operating system designed for creators who want to scale
             efficiently.
           </p>
@@ -48,9 +52,9 @@ export default function SystemPage() {
       </section>
 
       {/* Overview */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#7B04CE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-lg text-[#777777] leading-relaxed mb-12">
+          <p className="text-lg text-white leading-relaxed mb-12">
             The Eezdra System is built on three core pillars: intelligent automation, scalable networks, and data-driven
             optimization. We've designed every component to work seamlessly together, creating a powerful ecosystem that
             grows with your ambitions while maintaining the quality and consistency your audience expects.

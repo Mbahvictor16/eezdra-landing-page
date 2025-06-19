@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Brain, Users, Settings, ArrowRight, Mail, Instagram, Linkedin } from "lucide-react"
 
 import team from "/public/pic.webp"
+import logo from "/public/logo.png"
 
 export default function HomePage() {
   return (
@@ -20,7 +21,7 @@ export default function HomePage() {
               className="text-2xl font-bold text-[#3C1361]"
               style={{ fontFamily: "Playfair Display, serif" }}
             >
-              Eezdra
+              <Image src={logo} alt="logo" width={150} height={100} />
             </Link>
             <div className="hidden md:flex space-x-8">
               <Link href="#about" className="text-[#1A1A1A] hover:text-[#3C1361] transition-colors">
@@ -39,40 +40,38 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-[#3C1361]/5 to-[#008080]/5">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1200')] bg-cover bg-center opacity-5"></div>
+        <div className="absolute inset-0 bg-black bg-cover bg-center"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <h1
-            className="text-5xl md:text-7xl font-bold text-[#1A1A1A] mb-6"
+            className="text-5xl md:text-7xl font-bold text-white mb-6"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            Power Quietly. <br />
-            <span className="text-[#3C1361]">Scale Endlessly.</span>
+            We Build the Systems <br />
+            <span className="text-[#7B04CE]">Behind the Spotlight.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-[#777777] mb-8 max-w-2xl mx-auto">
-            Eezdra builds the invisible engine behind digital empires.
+          <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
+            Eezdra is a quiet powerhouse for creators and digital operators combining AI workflows, faceless content systems and scalable team structures that multiply your reach while reducing chaos.
           </p>
           <Button
             size="lg"
-            className="bg-[#3C1361] hover:bg-[#3C1361]/90 text-white px-8 py-4 text-lg font-semibold tracking-wider uppercase rounded-full"
+            className="bg-[#7B04CE] hover:bg-[#3C1361]/90 text-white px-8 py-4 text-lg font-semibold tracking-wider rounded-full"
             onClick={() => document.getElementById("apply")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Join the System <ArrowRight className="ml-2 h-5 w-5" />
+            Apply to join the system <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-[#7B04CE]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-[#1A1A1A] mb-6" style={{ fontFamily: "Playfair Display, serif" }}>
-                What We Do
+              <h2 className="text-4xl font-bold text-white mb-6" style={{ fontFamily: "Playfair Display, serif" }}>
+                About Us
               </h2>
-              <p className="text-lg text-[#777777] leading-relaxed">
-                Eezdra is a media‑tech operating system built for creators. We combine AI‑powered content creation,
-                scalable creator networks, and automated systems to help you grow quietly but powerfully. Our mission:
-                to build the backbone of tomorrow's digital empires.
+              <p className="text-lg text-white leading-relaxed">
+                Eezdra is a media‑tech that builds silent engines for digital creators. We design systems, workflows, and teams that power consistent, scalable content without the noise. Our mission is to help creators grow like companies with clarity and leverage.
               </p>
             </div>
             <div className="relative">
@@ -87,16 +86,28 @@ export default function HomePage() {
       {/* What We Offer */}
       <section className="py-20 bg-[#FDFDFD]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
+            <Card className="group hover:scale-105 transition-all duration-300 hover:shadow-xl border-0 bg-white">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-[#3C1361]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#3C1361]/20 transition-colors">
+                  <Settings className="h-8 w-8 text-[#FFD700]" />
+                </div>
+                <h3 className="text-xl font-bold text-[#1A1A1A] mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
+                  Content Management Solutions
+                </h3>
+                <p className="text-[#777777]">Consistency is built, not guessed</p>
+              </CardContent>
+            </Card>
+
             <Card className="group hover:scale-105 transition-all duration-300 hover:shadow-xl border-0 bg-white">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-[#3C1361]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#3C1361]/20 transition-colors">
                   <Brain className="h-8 w-8 text-[#3C1361]" />
                 </div>
                 <h3 className="text-xl font-bold text-[#1A1A1A] mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
-                  AI-Powered Content
+                  Creative Systems
                 </h3>
-                <p className="text-[#777777]">Efficient faceless video production at scale.</p>
+                <p className="text-[#777777]">From concept to execution, we build content engines that work on autopilot</p>
               </CardContent>
             </Card>
 
@@ -106,23 +117,60 @@ export default function HomePage() {
                   <Users className="h-8 w-8 text-[#008080]" />
                 </div>
                 <h3 className="text-xl font-bold text-[#1A1A1A] mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
-                  Scalable Creator Network
+                  Team Assembly
                 </h3>
-                <p className="text-[#777777]">Build your team, multiply reach.</p>
+                <p className="text-[#777777]">We source and manage creators that keep your brand moving.</p>
               </CardContent>
             </Card>
 
             <Card className="group hover:scale-105 transition-all duration-300 hover:shadow-xl border-0 bg-white">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-[#FFD700]/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#FFD700]/30 transition-colors">
-                  <Settings className="h-8 w-8 text-[#FFD700]" />
+                  <Brain className="h-8 w-8 text-[#3C1361]" />
                 </div>
                 <h3 className="text-xl font-bold text-[#1A1A1A] mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
-                  Content Systems & Automation
+                  Deep Content & Insights
                 </h3>
-                <p className="text-[#777777]">Logistics, workflows, tools — built for longevity.</p>
+                <p className="text-[#777777]">We study what performs so every next move is smarter</p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/*  */}
+      <section id="trusted brands" className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-rows-2 gap-12 items-center">
+            <div>
+
+              <p className="text-lg text-[#777777] leading-relaxed">
+                Eezdra works quietly behind brands that speak loudly. Our media systems power some of the most ambitious names in the global creator economy. Trusted by brands like:
+              </p>
+            </div>
+            <div className="relative">
+              <div className="w-full rounded-2xl md:flex items-center justify-center gap-8 text-center">
+                <h2 className="text-4xl font-bold text-[#A1A1A1] mb-12" style={{ fontFamily: "Playfair Display, serif" }}>
+                  Golde
+                </h2>
+
+                <h2 className="text-4xl font-bold text-[#A1A1A1] mb-12" style={{ fontFamily: "Playfair Display, serif" }}>
+                  Primal Queen
+                </h2>
+
+                <h2 className="text-4xl font-bold text-[#A1A1A1] mb-12" style={{ fontFamily: "Playfair Display, serif" }}>
+                  Top Shelf
+                </h2>
+
+                <h2 className="text-4xl font-bold text-[#A1A1A1] mb-12" style={{ fontFamily: "Playfair Display, serif" }}>
+                  Shower Bombs
+                </h2>
+
+                <h2 className="text-4xl font-bold text-[#A1A1A1] mb-12" style={{ fontFamily: "Playfair Display, serif" }}>
+                  Afina
+                </h2>
+              </div>
+            </div>
           </div>
         </div>
       </section>

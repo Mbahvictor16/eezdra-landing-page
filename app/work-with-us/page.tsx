@@ -1,9 +1,12 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, Quote, Star } from "lucide-react"
+
+import logo from "/public/logo.png"
 
 export default function WorkWithUsPage() {
   return (
@@ -17,7 +20,8 @@ export default function WorkWithUsPage() {
               className="text-2xl font-bold text-[#3C1361]"
               style={{ fontFamily: "Playfair Display, serif" }}
             >
-              Eezdra
+              <Image src={logo} alt="logo" width={150} height={100} />
+
             </Link>
             <div className="hidden md:flex space-x-8">
               <Link href="/#about" className="text-[#1A1A1A] hover:text-[#3C1361] transition-colors">
@@ -35,15 +39,15 @@ export default function WorkWithUsPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-[#3C1361]/5 to-[#008080]/5">
+      <section className="py-20 bg-black">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h1
-            className="text-4xl md:text-6xl font-bold text-[#1A1A1A] mb-6"
+            className="text-4xl md:text-6xl font-bold text-white mb-6"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            Creators — <span className="text-[#3C1361]">Join Eezdra</span>
+            Creators — <span className="text-[#7B04CE]">Join Eezdra</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl text-[#777777] mb-8" style={{ fontFamily: "Playfair Display, serif" }}>
+          <h2 className="text-2xl md:text-3xl text-white mb-8" style={{ fontFamily: "Playfair Display, serif" }}>
             We're looking for creators who want systems, not chaos.
           </h2>
         </div>
