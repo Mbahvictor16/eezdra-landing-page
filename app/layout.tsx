@@ -9,8 +9,7 @@ export const metadata: Metadata = {
   title: "Eezdra - Power Quietly. Scale Endlessly.",
   description:
     "Eezdra builds the invisible engine behind digital empires. A media-tech operating system built for creators.",
-  keywords: "AI content creation, creator network, content automation, digital marketing, TikTok creators",
-  generator: 'v0.dev'
+  keywords: "AI content creation, creator network, content automation, digital marketing, TikTok creators, eezdra",
 }
 
 export default function RootLayout({

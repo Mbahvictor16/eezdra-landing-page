@@ -101,7 +101,7 @@ export default function WorkWithUsPage() {
             <Button
               size="lg"
               className="bg-white text-[#3C1361] hover:bg-gray-100 px-8 py-4 text-lg font-semibold tracking-wider uppercase rounded-full"
-              onClick={() => window.open("https://forms.google.com/your-form-link", "_blank")}
+              onClick={() => window.open("https://calendly.com/eezdramain/15min", "_blank")}
             >
               Start Application
             </Button>
